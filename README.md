@@ -4,6 +4,8 @@
 [![Version](https://img.shields.io/cocoapods/v/Spreedly.svg?style=flat)](http://cocoapods.org/pods/Spreedly)
 [![License](https://img.shields.io/cocoapods/l/Spreedly.svg?style=flat)](http://cocoapods.org/pods/Spreedly)
 [![Platform](https://img.shields.io/cocoapods/p/Spreedly.svg?style=flat)](http://cocoapods.org/pods/Spreedly)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+
 
 If you’re building an iOS app and want to accept payments, the Spreedly iOS library can make it easier. It removes the burden of PCI compliance by making sure sensitive credit card information never touches your servers. Just a token associated with that payment method. Our library also supports Apple Pay so you can enable users to make payments without entering their credit card information.
 
@@ -21,6 +23,8 @@ More documentation and a guide to using the library can be found on the [Spreedl
 
 ## Installation
 
+### CocoaPods
+
 Spreedly is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add `Spreedly` to your Podfile:
 
@@ -34,6 +38,16 @@ target 'App' do
 end
 
 ```
+
+### Carthage
+
+To integrate Spreedly into your Xcode project using Carthage, specify it in your Cartfile:
+
+```
+github "spreedly/spreedly-ios"
+```
+
+Run carthage update to build the framework and drag the built Spreedly.framework into your Xcode project.
 
 If you're integrating into an existing Objective-C app, be sure to add the header file in the appropriate view controller.
 
